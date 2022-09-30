@@ -31,3 +31,10 @@ if we want to roll back all committed changes:
 * git reset --mixed (by default) from commit to working directory
 * git reset --soft from commit to index
 * git reset hard (do not safe changes, delete everything  in current commit, rollback to previous)
+
+#### Revert
+(Changes were pushed to the repository)
+* git revert SH1CodeLastCommit
+* git push
+
+revert is a new commit, it makes reversed changes. It needs push command.
