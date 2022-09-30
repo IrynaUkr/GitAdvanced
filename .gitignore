@@ -1,17 +1,8 @@
-HELP.md
-homework-3/target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# no .log files
+*.log
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# but du track error/log even you are ignoring .log files above
+!error.log
 
 ### IntelliJ IDEA ###
 .idea
@@ -19,15 +10,11 @@ homework-3/target/
 *.iml
 *.ipr
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# ignore the TODO file but ot subdir /TODO
+/TODO
 
-### VS Code ###
-.vscode/
+#ignore all files in the build/ directory
+build/
+
+#ignore all pdf files inhe do/ directory
+doc/**/*.pdf
