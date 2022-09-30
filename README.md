@@ -43,3 +43,4 @@ revert is a new commit, it makes reversed changes. It needs push command.
 - fast-forward merge 
 (just move HEAD main into HEAD feature, no changes were added in main, 
 all changes were made consequently)
+- 
