@@ -13,7 +13,7 @@ files were created, changed but not added to the index
 #### Staging area
 
 git reset --fileName1.java
-
+ 
 #### Commit
 (files were committed but did not push yet)
 if we can correct commit in two ways:
@@ -38,3 +38,8 @@ if we want to roll back all committed changes:
 * git push
 
 revert is a new commit, it makes reversed changes. It needs push command.
+
+### Merge
+- fast-forward merge 
+(just move HEAD main into HEAD feature, no changes were added in main, 
+all changes were made consequently)
