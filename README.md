@@ -14,21 +14,20 @@ files were created, changed but not added to the index
 
 git reset --fileName1.java
 
-#### Commit (files were committed but did not push yet)
+#### Commit
+(files were committed but did not push yet)
 if we can correct commit in two ways:
-* if we forgot to add file in commit:
-git add forgottenFile.txt
-git commit amend "message" 
-* if we want only change message we can use the same command
-  git commit amend "message" 
+- if we forgot to add file in commit:
+* git add forgottenFile.txt
+* git commit amend "message" 
+- if we want only change message we can use the same command
+* git commit amend "message" 
 Git change previous commit, it hash will be changed too.
 
-if we want to roll back all committed changes
-git reset HEAD~2
-2- amount of commits we need to roll back
+if we want to roll back all committed changes:
+* git reset HEAD~2  (2- amount of commits we need to roll back)
 
 #### Reset
-
-git reset --mixed (by default) from commit to working directory
-git reset --soft from commit to index
-git reset hard (do not safe changes, delete everything  in current commit, rollback to previous)
+* git reset --mixed (by default) from commit to working directory
+* git reset --soft from commit to index
+* git reset hard (do not safe changes, delete everything  in current commit, rollback to previous)
