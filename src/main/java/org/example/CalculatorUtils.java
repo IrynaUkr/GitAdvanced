@@ -1,13 +1,19 @@
 package org.example;
+import org.junit.platform.commons.logging.Logger;
+import org.junit.platform.commons.logging.LoggerFactory;
 
 public class CalculatorUtils {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(Calculator.class);
     static int[] parseString(String string) {
+        LOGGER.info(()->"method parse String starts");
         int length = string.length();
         char[] charArray = string.replaceAll(" ", "").toCharArray();
         int[] res = new int[length];
         for (int i = 0; i < length; i++) {
             res[i] = charArray[i] - 48;
         }
+        LOGGER.info(()->"method parse String completed successfully");
         return res;
     }
 
