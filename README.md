@@ -45,8 +45,11 @@ no changes were added in main, all changes were made consequently)
 - non fast-forward merge (created merge-commit between two branches)
 
 ### Git hooks.
-Hooks reside in the .git/hooks directory of every Git repository. To “install” a hook, all you have to do is remove the .sample extension. Or, if you’re writing a new script from scratch, you can simply add a new file matching one of the above filenames, minus the .sample extension. Hooks need to be executable, so you may need to change the file permissions of the script if you’re creating it from scratch. For example, to make sure that prepare-commit-msg is executable, you would run the following command:
+Hooks reside in the .git/hooks directory of every Git repository. To “install” a hook, all you have to do is remove the .sample extension. Or, if you’re writing a new script from scratch, you can simply add a new file matching one of the above filenames, minus the .sample extension. Hooks need to be executable, 
+so you may need to change the file permissions of the script if you’re creating it from scratch. For example, to make sure that prepare-commit-msg is executable, you would run the following command:
 chmod +x prepare-commit-msg
 
-
-
+#### Pre-Commit
+The pre-commit script is executed every time you run git commit before Git
+asks the developer for a commit message or generates a commit object. 
+You can use this hook to inspect the snapshot that is about to be committed. For example, you may want to run some automated tests that make sure the commit doesn’t break any existing functionality.
