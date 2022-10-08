@@ -44,3 +44,11 @@ revert is a new commit, it makes reversed changes. It needs push command.
 no changes were added in main, all changes were made consequently)
 - non fast-forward merge (created merge-commit between two branches)
 
+### Git hooks.
+Hooks reside in the .git/hooks directory of every Git repository. To “install” a hook, all you have to do is remove the .sample extension. Or, if you’re writing a new script from scratch, you can simply add a new file matching one of the above filenames, minus the .sample extension. Hooks need to be executable, so you may need to change the file permissions of the script if you’re creating it from scratch. For example, to make sure that prepare-commit-msg is executable, you would run the following command:
+chmod +x prepare-commit-msg
+
+=
+-
+
+
