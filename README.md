@@ -53,10 +53,13 @@ chmod +x prepare-commit-msg
 The pre-commit script is executed every time you run git commit before Git
 asks the developer for a commit message or generates a commit object.
 You can use this hook to inspect the snapshot that is about to be committed.
-For example, you may want to run some automated tests that make sure the commit doesn’t break any existing functionality.
+For example, you may want to run some automated tests that make sure the
+commit does not break any existing functionality or build to check if it is successful.
+
 
 #### Pre-push
 The pre-push hook runs during git push, after the remote refs have been updated
 but before any objects have been transferred.
-You can use it to validate a set of ref updates before a push occurs (a non-zero exit code will abort the push).
+You can use it to validate a set of ref updates before 
+xa push occurs (a non-zero exit code will abort the push).
  
