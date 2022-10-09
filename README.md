@@ -49,6 +49,13 @@ Hooks reside in the .git/hooks directory of every Git repository. To “install�
 so you may need to change the file permissions of the script if you’re creating it from scratch. For example, to make sure that prepare-commit-msg is executable, you would run the following command:
 chmod +x prepare-commit-msg
 
+#### commit-message
+The commit-msg hook is  called after the user enters a commit message. 
+This is an appropriate place to warn developers that their message doesn't adhere 
+to your team's standards. The only argument passed to this hook is the name of the file
+that contains the message.
+
+
 #### Pre-Commit
 The pre-commit script is executed every time you run git commit before Git
 asks the developer for a commit message or generates a commit object.
