@@ -57,5 +57,6 @@ For example, you may want to run some automated tests that make sure the commit 
 
 #### Pre-push
 The pre-push hook runs during git push, after the remote refs have been updated
-but before any objects have been transferred. You can use it to validate 
-a set of ref updates before a push occurs (a non-zero exit code will abort the push).
+but before any objects have been transferred.
+You can use it to validate a set of ref updates before a push occurs (a non-zero exit code will abort the push).
+ some
